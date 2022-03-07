@@ -1,0 +1,220 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: white;
+}
+
+.profilePicture {
+    position: absolute;
+    top: 150px;
+    z-index: 500;
+}
+
+.sidenav {
+    position: fixed;
+    top: 0;
+    width: 437px;
+    bottom: 0;
+    left: -800px;
+    z-index: 10;
+    -webkit-transition: left 1s ease;
+    transition: left 1s ease;
+}
+
+.sideNavImg {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+}
+
+.topLeftContainer {
+    z-index: 11;
+    position: fixed;
+}
+
+.topLeft {
+    position: fixed;
+    top: -200px;
+    left: -1000px;
+    z-index: 11;
+    -webkit-transition: left 1s ease;
+    transition: left 1s ease;
+}
+
+.topRightContainer {
+    z-index: 12;
+    position: fixed;
+}
+
+.topRight {
+    position: fixed;
+    z-index: 12;
+    right: -1200px;
+    width: 100%;
+    top: -250px;
+    -webkit-transition: right 1s ease;
+    transition: right 1s ease;
+}
+
+.btn {
+    position: absolute;
+    background-color: #60768A;
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    width: 120px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+    background-color: #566A7CFF;
+}
+
+#house-chimney {
+    margin-left: 158px;
+    left: 0;
+    top: 440px;
+    z-index: 15;
+}
+
+#address-card {
+    margin-left: 158px;
+    left: 0;
+    top: 520px;
+    z-index: 15;
+}
+
+#download {
+    margin-left: 118px;
+    left: 0;
+    top: 680px;
+    z-index: 15;
+    width: 200px;
+}
+
+#address-book {
+    margin-left: 158px;
+    left: 0;
+    top: 600px;
+    z-index: 15;
+}
+
+.main {
+    margin: 300px 0 100px 370px;
+    padding: 24px 24px 12px 24px;
+    color: black;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.serotonin {
+    position: fixed;
+    top: 20%;
+    margin-left: -1300px;
+    -webkit-transition: margin-left 1s ease, transform 0.7s;
+    transition: margin-left 1s ease, transform 0.7s;
+}
+
+.welcome {
+    color: black;
+    width: 100%;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 45px;
+}
+
+.background {
+    width: 100%;
+}
+
+.info {
+    background-color: #D8EBFC;
+    padding: 5px 75px 5px 75px;
+    margin: 5px 200px 5px 200px;
+}
+
+.pp {
+    width: 140px;
+    display: inline-block;
+    vertical-align: -40px;
+}
+
+.coord {
+    display: inline-block;
+}
+
+.about-me-list {
+    padding-left: 50px;
+}
+
+.about-me h2 {
+    font-weight: lighter;
+}
+
+.icon-skills {
+    width: 70px;
+    text-decoration: none;
+}
+
+.icon-skills-css {
+    width: 50px;
+}
+
+.icon-skills-sketchup {
+    height: 77px;
+}
+
+.icon-skills-sculptris {
+    height: 70px;
+}
+
+.projects-title {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: lighter;
+}
+
+.contact-title {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: lighter;
+}
+
+.logo-contact {
+    width: 50px;
+    vertical-align: -15px;
+}
+
+.contact-text {
+    color: black;
+    font-size: 20px;
+}
+
+.footer-cr {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.copyright {
+    font-size: 12px;
+    font-weight: lighter;
+    text-align: center;
+    color: black;
+}
+
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
