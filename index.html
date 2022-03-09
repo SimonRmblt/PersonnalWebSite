@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="https://kit.fontawesome.com/c22adca897.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@svgdotjs/svg.js@3.0/dist/svg.min.js"></script>
-    <link rel="stylesheet" href="index.css">
     <meta charset="UTF-8">
     <title>Simon Riembault</title>
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <script src="https://unpkg.com/kursor"></script>
+    <script src="https://kit.fontawesome.com/c22adca897.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@svgdotjs/svg.js@3.0/dist/svg.min.js"></script>
+    <script src="sound.js"></script>
 </head>
 <body>
     <nav class="sidenav" id="mySidenav">
@@ -20,27 +23,34 @@
     </nav>
 
     <div class="topLeftContainer">
-        <img src="img/topLeftPart.png" class="topLeft" id="topLeftContainer" alt="Serotonin molecule">
+        <div class="topLeft" id="topLeftContainer"></div>
     </div>
 
     <div class="topRightContainer">
-        <img src="img/topRightPart.png" class="topRight" id="topRightContainer">
+        <div class="topRight" id="topRightContainer"></div>
     </div>
     <div class="main" id="home">
-        <img src="img/moleculeSerotonin.png" class="serotonin" id="serotonin">
-        <!--<div class="home">
-            <div>
-                <h1 class="welcome" id="title-page"></h1>
-            </div>
-            <img src="img/bakground.png" class="background">
-        </div>
-        <div class="info" id="info">
-            <div class="about-me" id="about-me">
-                <h2>About Me</h2>
-                <hr style="width: 200px; margin-left: 0;">
-                <p>My name is Simon, I live in France and I'm 18 years old. I'm currently studying in first year at <a href="https://www.epitech.eu/en/" style="color: black; text-decoration: underline; ;" target="_blank">Epitech Technology</a>. My goal is to discover, learn and master in order to help and propose services for any programming project!</p>
-                <div class="about-me-list" id="about-me-list">
+        <img src="img/pp_site_web2.png" class="me" id="me" alt="Drawing of me(Simon Riembault)">
+        <div class="cardSlideshowContainer">
+            <div class="cardAboutMe" id="cardAboutMe">
+                <div style="padding: 20px;">
+                    <img src="img/programmingAboutMe.jpg" class="aboutMeBg">
+                    <h4 class="job">IT Developer</h4>
                     <img src="img/pp.jpg" class="pp">
+                    <h2 style="margin: 28% 0 10% 40%; font-weight: bold">Simon Riembault</h2>
+                <p class="textAboutMe">My name is Simon, I live in France and I'm 18 years old. I'm currently studying in first year at <a href="https://www.epitech.eu/en/" style="color: black; text-decoration: underline; ;" target="_blank">Epitech Technology</a>. My goal is to discover, learn and master in order to propose services for any programming project!</p>
+                </div>
+            </div>
+            <div class="cardAboutMe">
+                <div style="padding: 20px;">
+                    <img src="img/programmingAboutMe.jpg" class="aboutMeBg">
+                    <h4 class="job">IT Developer</h4>
+                    <img src="img/pp.jpg" class="pp">
+                    <h2 style="margin: 28% 0 10% 40%; font-weight: bold">Simon Riembault</h2>
+                    <p class="textAboutMe">My name is Simon, I live in France and I'm 18 years old. I'm currently studying in first year at <a href="https://www.epitech.eu/en/" style="color: black; text-decoration: underline; ;" target="_blank">Epitech Technology</a>. My goal is to discover, learn and master in order to propose services for any programming project!</p>
+                </div>
+            </div>
+                <!--<div class="about-me-list" id="about-me-list">
                     <ul class="coord">
                         <li><a style="font-weight: bold;">Phone:</a> <a href="tel:+33 6 67 78 39 29">+33 6 67 78 39 29</a></li>
                         <li><a style="font-weight: bold;">E-mail:</a> <a href="mailto:contact@simonriembault.eu" target="_blank">contact@simonriembault.eu</a></li>
@@ -68,37 +78,13 @@
                 <a style="text-decoration: none;" target="_blank" href="https://en.wikipedia.org/wiki/SketchUp"><img src="img/google-sketchup.png" class="icon-skills-sketchup"></a>
                 <a style="text-decoration: none;" target="_blank" href="https://en.wikipedia.org/wiki/Sculptris"><img src="img/sculptris.png" class="icon-skills-sculptris"></a>
                 <a style="text-decoration: none;" target="_blank" href="https://en.wikipedia.org/wiki/JavaScript"><img src="img/javascript.png" class="icon-skills"></a>
-            </div>
-            <div class="projects" id="projects">
-                <br><br>
-                <hr>
-                <h2 class="projects-title">C.V.</h2>
-                <hr style="width: 200px; margin-left: 0;">
-                <a href="src/CV_Simon_RIEMBAULT.pdf" style="display: none; " target="_blank" id="download-cv"><em>Download C.V.</em></a>
-                <object id="cv" data="src/CV_Simon_RIEMBAULT.pdf" style="height: 800px;width: 600px; padding-left: 295px;"></object>
-            </div>
-            <div class="contact" id="contact">
-                <br><br>
-                <hr>
-                <h2 class="contact-title">Contact</h2>
-                <hr style="width: 200px; margin-left: 0;">
-                <img src="img/linkedIn.png" class="logo-contact">
-                <a class="contact-text">@<a href="https://linkedin.com/in/simon-riembault" target="_blank" class="contact-text">Simon Riembault</a></a>
-                <br>
-                <br>
-                <img src="img/github.png" class="logo-contact">
-                <a class="contact-text">@<a href="https://github.com/SimonRmblt" class="contact-text" target="_blank">SimonRmblt</a></a>
-                <br>
-                <br>
-                <img src="img/mail-logo.png" class="logo-contact">
-                <a class="contact-text"><a href="mailto:contact@simonriembault.eu" target="_blank" class="contact-text">contact@simonriembault.eu</a></a>
-                <br>
-                <br>
-            </div>
+            </div>-->
         </div>
-    </div>-->
+        <div class="cardContact" id="cardContact">
+            <p></p>
+        </div>
     </div>
-    <script src="script.js"></script>
+    <script src="animation.js"></script>
     <noscript>Sorry your browser doesn't support JavaScript...</noscript>
 </body>
 </html>

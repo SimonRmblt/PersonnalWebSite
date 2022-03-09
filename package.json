@@ -1,0 +1,7 @@
+{
+  "name": "SitePersoV2",
+  "version": "1.0.0",
+  "dependencies": {
+    "howler": "^2.2.3"
+  }
+}

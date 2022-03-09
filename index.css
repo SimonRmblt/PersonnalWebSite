@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    cursor: none;
 }
 
 body {
@@ -36,10 +37,18 @@ body {
     position: fixed;
 }
 
+#topLeftContainer {
+    display : inline-block;
+    height : 0;
+    width : 0;
+    border-top : 280px solid #60768A;
+    border-right : 1185px solid transparent;
+}
+
 .topLeft {
     position: fixed;
-    top: -200px;
-    left: -1000px;
+    top: 0;
+    left: -1200px;
     z-index: 11;
     -webkit-transition: left 1s ease;
     transition: left 1s ease;
@@ -50,12 +59,20 @@ body {
     position: fixed;
 }
 
+#topRightContainer {
+    display : inline-block;
+    height : 0;
+    width : 0;
+    border-top : 300px solid #D6974C;
+    border-left : 1155px solid transparent;
+}
+
 .topRight {
     position: fixed;
     z-index: 12;
     right: -1200px;
     width: 100%;
-    top: -250px;
+    top: 0;
     -webkit-transition: right 1s ease;
     transition: right 1s ease;
 }
@@ -106,18 +123,19 @@ body {
 }
 
 .main {
+    font-size: 10px;
     margin: 300px 0 100px 370px;
     padding: 24px 24px 12px 24px;
     color: black;
     font-family: "Segoe UI", Arial, sans-serif;
 }
 
-.serotonin {
+.me {
     position: fixed;
-    top: 20%;
-    margin-left: -1300px;
-    -webkit-transition: margin-left 1s ease, transform 0.7s;
-    transition: margin-left 1s ease, transform 0.7s;
+    top: 200px;
+    margin-left: -1600px;
+    -webkit-transition: margin-left 1s ease, transform 1s;
+    transition: margin-left 1s ease, transform 1s;
 }
 
 .welcome {
@@ -136,12 +154,6 @@ body {
     background-color: #D8EBFC;
     padding: 5px 75px 5px 75px;
     margin: 5px 200px 5px 200px;
-}
-
-.pp {
-    width: 140px;
-    display: inline-block;
-    vertical-align: -40px;
 }
 
 .coord {
@@ -191,6 +203,72 @@ body {
 .contact-text {
     color: black;
     font-size: 20px;
+}
+
+.cardAboutMe {
+    z-index: 20;
+    box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+    background-color: #fcfcfc;
+    position: fixed;
+    top: 43%;
+    left: 48%;
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s, transform 1s;
+    transition: opacity 0.5s, transform 1s;
+}
+
+.job {
+    position: absolute;
+    z-index: 23;
+    right: 20px;
+    top: 45px;
+}
+
+.pp {
+    margin-left: 20%;
+    vertical-align: center;
+    border-radius: 100%;
+    border: white solid 5px;
+    width: 75px;
+    display: inline-block;
+    position: absolute;
+    z-index: 22
+}
+
+.textAboutMe {
+    text-align: justify;
+    vertical-align: center;
+    z-index: 23;
+    margin: 0 0 0 40%;
+}
+
+.aboutMeBg {
+    border-radius: 20px 0 0 20px;
+    height: 300px;
+    width: 35%;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 21;
+}
+
+.cardContact {
+    z-index: 25;
+    box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+    background-color: #fcfcfc;
+    position: fixed;
+    top: 43%;
+    left: 48%;
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s, transform 1s;
+    transition: opacity 0.5s, transform 1s;
 }
 
 .footer-cr {
