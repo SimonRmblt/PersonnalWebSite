@@ -12,5 +12,8 @@
     <orderEntry type="library" name="@svgdotjs/svg.js" level="application" />
     <orderEntry type="library" name="kursor" level="application" />
     <orderEntry type="library" name="jquery" level="application" />
+    <orderEntry type="library" name="kursor" level="application" />
+    <orderEntry type="library" name="c22adca897" level="application" />
+    <orderEntry type="library" name="@svgdotjs/svg.js" level="application" />
   </component>
 </module>

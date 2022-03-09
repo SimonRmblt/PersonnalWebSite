@@ -190,21 +190,6 @@ body {
     font-weight: lighter;
 }
 
-.contact-title {
-    font-family: "Segoe UI", Arial, sans-serif;
-    font-weight: lighter;
-}
-
-.logo-contact {
-    width: 50px;
-    vertical-align: -15px;
-}
-
-.contact-text {
-    color: black;
-    font-size: 20px;
-}
-
 .cardAboutMe {
     z-index: 20;
     box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
@@ -261,14 +246,73 @@ body {
     box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
     background-color: #fcfcfc;
     position: fixed;
-    top: 43%;
-    left: 48%;
-    width: 400px;
-    height: 300px;
+    top: 47%;
+    left: 50%;
+    width: 250px;
+    height: 200px;
     border-radius: 20px;
     opacity: 0;
     -webkit-transition: opacity 0.5s, transform 1s;
     transition: opacity 0.5s, transform 1s;
+}
+
+.epitech {
+    position: absolute;
+    top: 10%;
+    width: 80%;
+    left: 10%;
+}
+
+.contact-title {
+    z-index: 27;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 47%;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 500;
+}
+
+.logo-contactL {
+    position: absolute;
+    bottom: 10%;
+    left: 15%;
+    width: 50px;
+    vertical-align: -15px;
+    -webkit-transition: transform 0.5s;
+    transition: transform 0.5s;
+}
+
+.logo-contactG {
+    position: absolute;
+    bottom: 10%;
+    left: 40%;
+    width: 50px;
+    vertical-align: -15px;
+    -webkit-transition: transform 0.5s;
+    transition: transform 0.5s;
+}
+
+.logo-contactM {
+    position: absolute;
+    bottom: 10%;
+    right: 15%;
+    width: 50px;
+    vertical-align: -15px;
+    -webkit-transition: transform 0.5s;
+    transition: transform 0.5s;
+}
+
+.logo-contactL:hover {
+    transform: scale(1.2);
+}
+
+.logo-contactM:hover {
+    transform: scale(1.2);
+}
+
+.logo-contactG:hover {
+    transform: scale(1.2);
 }
 
 .footer-cr {

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-    <file url="PROJECT" libraries="{@svgdotjs/svg.js, c22adca897, jquery, kursor}" />
-    <includedPredefinedLibrary name="Node.js Core" />
+    <file url="PROJECT" libraries="{@svgdotjs/svg.js, c22adca897, kursor}" />
   </component>
 </project>
